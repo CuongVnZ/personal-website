@@ -1,4 +1,5 @@
 .env
 node_modules
 images/pictures
+__archieves
 package-lock.json

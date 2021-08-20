@@ -1,48 +1,13 @@
-const dbconn = require('../model/dbconn');
 const axios = require('axios').default;
+const cheerio = require("cheerio");
+const fs = require("fs");
 
-function AverageEarnings(start_date, total_earning) {
-    // Calculate days since employment
-    const today = new Date();
-    const empDate = new Date(start_date);
-    const dateNow = new Date();
-    const Difference_In_Time = dateNow.getTime() - empDate.getTime();
-    const Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
-    // Calculate avg. earning
-    const totalEarning = total_earning / Math.floor(Difference_In_Days);
-    const totalEarningPerDay = Math.round(totalEarning * 10) / 10;
-    return totalEarningPerDay;
-}
-
-function ScholarRankings(onResultCallback) {
-    const sqlSelect = "SELECT * FROM scholar";
-    return new Promise(function (resolve, reject) { 
-        dbconn.conn.query(sqlSelect, (err, result) => {
-            if(err) return onResultCallback(err);  
-            let scholarList = new Array();
-            result.forEach(scholar => {
-                let newscholar = {
-                    username : scholar.username,
-                    avg_earning : scholar.avg_earning,
-                    manager_idmanager : scholar.manager_idmanager
-                }
-                scholarList.push(newscholar);
-            });       
-            resolve(scholarList.sort((b, a) => (a.avg_earning > b.avg_earning) ? 1 : -1));
-        })  
-    }) 
-}
-
-function calc(last_month_earning, scholar_cut, valueusd, valuedkk) {
-    // Scholar Cut
-    const susd = Math.round(last_month_earning * scholar_cut / 100 * valueusd),
-        sdkk = Math.round(last_month_earning * scholar_cut / 100 * valuedkk),
-        sslp = Math.round(last_month_earning * scholar_cut / 100),
-        // Manager Cut
-        musd = Math.round(last_month_earning * (100 - scholar_cut) / 100 * valueusd),
-        mdkk = Math.round(last_month_earning * (100 - scholar_cut) / 100 * valuedkk),
-        mslp = Math.round(last_month_earning * (100 - scholar_cut) / 100)
-    return [ susd, sdkk, sslp, musd, mdkk, mslp ];
+if(typeof(String.prototype.trim) === "undefined")
+{
+    String.prototype.trim = function() 
+    {
+        return String(this).replace(/^\s+|\s+$/g, '');
+    };
 }
 
 function createDate() {
@@ -77,16 +42,116 @@ function checkApostrophe(data) { // Remove Apostrophe from string
 
 })(); */
 
-module.exports.AverageEarnings = AverageEarnings;
-module.exports.rankings = async() => { return await ScholarRankings() };
-module.exports.scholarRankingsList = ScholarRankings(); 
-module.exports.calc = calc;
+function saveJson(obj, name, dir){
+    var path = dir + "" + name;
+    var count = obj.count;
+    fs.writeFile(path, JSON.stringify(obj, null, 2), (err) => {
+      if (err) {
+        console.error(err);
+        return;
+      }
+      console.log("Successfully written data to file " + name);
+    });
+}
+
+function readJson(filename, folder){
+    var dir = folder+filename;
+    return new Promise(function(resolve, reject){
+        fs.readFile(dir, 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                return;
+            } else {
+                var obj = {}
+                obj = JSON.parse(data);
+                resolve(obj);
+            }
+        });
+    });
+}
+
+function readDir(dir){
+    return new Promise(function(resolve, reject){
+        fs.readdir(dir, 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                return;
+            } else {
+                resolve(data);
+            }
+        });
+    });
+}
+
+function readCoPhieu(others){
+    return new Promise(function(resolve, reject){
+        fs.readFile("__cophieu.json", 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                return;
+            } else {
+                var obj = {}
+                obj = JSON.parse(data);
+                resolve([obj, others]);
+            }
+        });
+    });
+}
+
+function getCoPhieu(name) {
+    const url = `https://www.stockbiz.vn/Stocks/${name}/Overview.aspx`;
+    return axios.get(url)
+    .then(({data}) => {
+        return new Promise((resolve, reject) => {
+            const $ = cheerio.load(data);
+            const listItems = $("#stockAvgVolume10d .value");
+
+            const colorItems = $(".valueContent font");
+            var color
+            colorItems.each((idx, el) => {
+              color = $(el).attr().color;
+            });
+
+            var value;
+            listItems.each((idx, el) => {
+              value = $(el).text().trim();
+            });
+            resolve([value, color])
+        })
+    });
+}
+
+function updateCoPhieu(){
+    new Promise(function(resolve, reject){
+        fs.readFile("__cophieu.json", 'utf8', (err, data) => {
+            if (err) {
+                console.error(err);
+                return;
+            } else {
+                var obj = {}
+                obj = JSON.parse(data);
+                resolve(obj);
+            }
+        });
+    })
+    .then(obj => {
+        temp = obj.data;
+        return Promise.all(temp.map(name => getCoPhieu(name)))
+        .then((data) => {
+            return ([data, obj])
+        })
+    })
+    .then(data => {
+        obj = data[1]
+        obj.value = data[0]
+        return saveJson(obj, "__cophieu.json", "")
+    });
+}
+
 module.exports.createDate = createDate();
 module.exports.checkApostrophe = checkApostrophe;
-
-
-
-
-
-
-
+module.exports.saveJson = saveJson;
+module.exports.readJson = readJson;
+module.exports.readDir = readDir;
+module.exports.readCoPhieu = readCoPhieu;
+module.exports.updateCoPhieu = updateCoPhieu;

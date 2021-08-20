@@ -3,6 +3,11 @@ const app = express();
 const path = require('path');
 const dotenv = require('dotenv');
 
+const cors = require('cors');
+
+const api = require('./services/api');
+const fs = require("fs");
+
 app.use(express.json({ limit: '100mb' }));
 app.use(express.urlencoded({ limit: '100mb', extended: true }));
 app.use(express.json());
@@ -19,10 +24,13 @@ app.use(express.static(path.join(__dirname, 'images')));
 app.use(express.static(path.join(__dirname, 'controllers')));
 app.use(express.static(path.join(__dirname, 'routes')));
 app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", options => iotions.AllowAnyOrigin()); // update to match the domain you will make the request from
+    res.header("Access-Control-Allow-Origin", options => iotions.AllowAnyOrigin());
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
   });
+app.use(cors({
+    origin: '*'
+}));
 
 // Set the view engine to ejs
 app.set('view engine', 'ejs');
@@ -30,7 +38,7 @@ app.set('view engine', 'ejs');
 var router = require('./routes');
 app.use('/', router);
 
+app.listen(process.env.SERVER_PORT, "0.0.0.0", () => console.log(`Server is running at ${process.env.SERVER_PORT}`));
 
-const getaxi = require('./services/api');
-
-app.listen(process.env.SERVER_PORT, () => console.log(`Server is running at ${process.env.SERVER_PORT}`));
+api.updateCoPhieu();
+setInterval(api.updateCoPhieu, 3*60000);

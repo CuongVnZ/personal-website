@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ("./include/head") %>
+    <body>
+        <%- include ("./include/nav") %>
+        <div class="container">
+            <div class="row">
+                <h4>Tools</h4>
+            </div>       
+            <div class="row3" style="width: max-content;">
+                <table class="table table-striped" id="listTable" >
+                    <thead class="thead-light">
+                        <th scope="col">---</th>
+                        <% nf = Intl.NumberFormat() %>
+                        <% cp = ["MWG", "NTL", "VNM", "VIC", "KDH", "DIG", "NTL", "FPT", "PET", "PC1", "MSB"] %>
+                        <% cp.forEach(obj => { %>
+                        <th scope="col"><%= obj %></th>
+                        <% }) %> 
+                    </thead>
+                    <tbody>
+                        <% list.forEach(item => { %>
+                            <tr>
+                                <td><%= item.time %></td>
+
+                                <% cp.forEach(coPhieu => { %>
+                                    <% vol = item.data.find(x => x.name === coPhieu).vol %>
+                                    <td><%= nf.format(Math.round(parseInt(vol.replace(/,/g, ""))*270/item.minutes)) %></td>
+                                <% }) %> 
+
+                            </tr>
+                        <% }) %> 
+
+                    </tbody>
+                </table>  
+        </div>       
+        <%- include ("./include/footer") %>
+        <%- include ("./include/scripts") %>
+    </body>
+</html>

@@ -1,34 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
     <%- include ("./include/head") %>
+    <% 
+        nf = Intl.NumberFormat() 
+        function resort(arr){
+            arr.sort(function(a, b) {
+              var keyA = a.count, keyB = b.count;
+              if (keyA < keyB) return -1;
+              if (keyA > keyB) return 1;
+              return 0;
+            });
+        }
+        resort(list);
+    %>
     <body>
         <%- include ("./include/nav") %>
         <div class="container">
             <div class="row">
-                <br>
-            </div>
+                <h4>Tools</h4>
+            </div>       
+            <div class="row3" style="width: max-content;">
+                <table class="table table-striped" id="listTable" >
+                    <thead class="thead-light">
+                        <th scope="col"><h6>Mã cổ phiếu</h6></th>
+                        <% list.forEach(item => {
+                            if(item.count %2 == 0) { %>
+                            <th scope="col"><%= item.time %></th>
+                        <%   }
+                        }) %> 
+                    </thead>
+                    <tbody>
+                        <% 
+                            cp.data.forEach((coPhieu, idx) => {
+                            avg = parseInt(cp.value[idx][0].replace(/\./g, ""))
+                            color = cp.value[idx][1]
+                            if(color == null) color = "#ffa500"
+                         %>
+                            <tr style="color: <%= color %>">
+                                <td><p style="font-size:130%; color: white; background-color: <%= color %>" title="<%= nf.format(avg) %>"><%= coPhieu %></p></td>
+                            <% 
+                                list.forEach(item => { 
+                                    if(item.count %2 == 0) {
+                            %>
+                                <% 
+                                    vol = item.data.find(x => x.name === coPhieu).vol
 
-            <div class="row">
-                <!-- <p style="height:300px;">Content Here...</p> -->
-               <p>Hello, as announced earlier today we will stop sending QR codes to you. From now on you will just login to the Axie website with your username and password to get the QR code yourself
-                <br>
-                Username: <br>
-                Password: <br>
-                <br>
-                Remember the password is case sensitive. (Do not change the password!) <br>
-                Do not share your username or password with anyone else. <br>
-                <br>
-                But still only keep to one device! or Axie Infinity will ban the account</p><br>
-                <img src="/tools/breedingCost.png" alt="" style="border: 1px solid black;">
-                <a href="https://axie.substack.com/p/axie-breeding-guide">Breeding guide link</a>
-                <img src="/tools/breedingFamily.png" alt="" style="max-width: 350px; border: 1px solid black;">
-                <img src="/tools/classTypes.png" alt="" style="border: 1px; border: 1px solid black;">
-                <img src="/tools/counterCycle.png" alt="" style="border: 1px">
+                                    time = item.time.split(":");
+                                    hh = parseInt(time[0])
+                                    mm = parseInt(time[1])
+                                    rest = 0;
+                                    if(hh >= 13) rest = 90
+                                    timeCount = (hh-9)*60 + mm - rest
 
-            </div>
-        </div>
-
-        <%- include ("./include/scripts") %>
+                                    vol1 = Math.round(parseInt(vol.replace(/,/g, ""))*270/timeCount)
+                                    volNew = nf.format(Math.round(parseInt(vol.replace(/,/g, ""))*270/timeCount))
+                                %>
+                                <td><text title="<%= volNew %>"><%= (vol1/avg).toFixed(2) %></text></td>
+                            <% 
+                                    }
+                                }) 
+                            %>
+                            </tr>
+                        <% 
+                            }) 
+                        %> 
+                    </tbody>
+                </table>  
+        </div>       
         <%- include ("./include/footer") %>
+        <%- include ("./include/scripts") %>
     </body>
+    <script language="javascript">
+        setInterval(function(){
+           window.location.reload(1);
+        }, 1*60000);
+    </script>
 </html>
