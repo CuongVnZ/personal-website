@@ -2,6 +2,9 @@ const axios = require('axios').default;
 const cheerio = require("cheerio");
 const fs = require("fs");
 
+const NodeCache = require( "node-cache" );
+const myCache = new NodeCache();
+
 if(typeof(String.prototype.trim) === "undefined")
 {
     String.prototype.trim = function() 
@@ -123,7 +126,7 @@ function getCoPhieu(name) {
 
 function updateCoPhieu(){
     new Promise(function(resolve, reject){
-        fs.readFile("__cophieu.json", 'utf8', (err, data) => {
+        fs.readFile("__list.json", 'utf8', (err, data) => {
             if (err) {
                 console.error(err);
                 return;
@@ -135,8 +138,8 @@ function updateCoPhieu(){
         });
     })
     .then(obj => {
-        temp = obj.data;
-        return Promise.all(temp.map(name => getCoPhieu(name)))
+        list = obj.data;
+        return Promise.all(list.map(name => getCoPhieu(name)))
         .then((data) => {
             return ([data, obj])
         })
@@ -144,8 +147,49 @@ function updateCoPhieu(){
     .then(data => {
         obj = data[1]
         obj.value = data[0]
+        myCache.set("coPhieuValue", obj)
+        myCache.set("coPhieuList", obj.data)
         return saveJson(obj, "__cophieu.json", "")
     });
+}
+
+function addCoPhieu(name, index){
+    let listCp = myCache.get("coPhieuList");
+    let listValue = myCache.get("coPhieuValue");
+
+    if(listCp.includes(name)) return;
+
+    listCp.splice(index, 0, name);
+
+    listValue.data = listCp;
+    listValue.value.splice(index, 0, ['0','grey']);
+
+    console.log(listValue)
+
+    myCache.set("coPhieuList", listCp)
+    myCache.set("coPhieuValue", listValue)
+
+    let obj = { data: listCp };
+    saveJson(obj, "__list.json", "")
+}
+
+function removeCoPhieu(name){
+    let listCp = myCache.get("coPhieuList");
+    let listValue = myCache.get("coPhieuValue");
+
+    var index = listCp.indexOf(name);
+    if (index !== -1) {
+        listCp.splice(index, 1);
+        
+        listValue.data = listCp;
+        listValue.value.splice(index, 1);
+    }
+
+    myCache.set("coPhieuList", listCp)
+    myCache.set("coPhieuValue", listValue)
+
+    let obj = { data: listCp };
+    saveJson(obj, "__list.json", "")
 }
 
 module.exports.createDate = createDate();
@@ -153,5 +197,10 @@ module.exports.checkApostrophe = checkApostrophe;
 module.exports.saveJson = saveJson;
 module.exports.readJson = readJson;
 module.exports.readDir = readDir;
+
 module.exports.readCoPhieu = readCoPhieu;
 module.exports.updateCoPhieu = updateCoPhieu;
+module.exports.addCoPhieu = addCoPhieu;
+module.exports.removeCoPhieu = removeCoPhieu;
+
+module.exports.myCache = myCache;

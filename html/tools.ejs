@@ -14,11 +14,17 @@
         resort(list);
     %>
     <body>
+        <script src="./tools.js"></script>
         <%- include ("./include/nav") %>
         <div class="container">
             <div class="row">
                 <h4>Tools</h4>
-            </div>       
+            </div>
+            <div>
+                <input type="text" id="inputName" placeholder="Thêm mã cổ Phiếu">
+                <input type="text" id="inputIndex" placeholder="Dòng">
+                <button onclick="addCp()">Thêm</button>
+            </div></br>
             <div class="row3" style="width: max-content;">
                 <table class="table table-striped" id="listTable" >
                     <thead class="thead-light">
@@ -32,31 +38,38 @@
                     <tbody>
                         <% 
                             cp.data.forEach((coPhieu, idx) => {
-                            avg = parseInt(cp.value[idx][0].replace(/\./g, ""))
+                            avg = cp.value[idx][0];
+                            if(typeof avg === 'undefined') avg = '0'
+                            avg = parseInt(avg.replace(/\./g, ""))
                             color = cp.value[idx][1]
                             if(color == null) color = "#ffa500"
                          %>
                             <tr style="color: <%= color %>">
-                                <td><p style="font-size:130%; color: white; background-color: <%= color %>" title="<%= nf.format(avg) %>"><%= coPhieu %></p></td>
+                                <td>
+                                    <p style="font-size:130%; color: white; background-color: <%= color %>" title="<%= nf.format(avg) %>"><%= idx+1 + ". " + coPhieu %></p>
+                                    <button onclick="removeCp('<%= coPhieu %>')" type="button">X</button>
+                                </td>
                             <% 
                                 list.forEach(item => { 
                                     if(item.count %2 == 0) {
+                                        i = item.data.find(x => x.name === coPhieu);
+                                        if(typeof i != 'undefined'){
+                                            vol = i.vol + '0'
+
+                                            time = item.time.split(":");
+                                            hh = parseInt(time[0])
+                                            mm = parseInt(time[1])
+                                            rest = 0;
+                                            if(hh >= 13) rest = 90
+                                            timeCount = (hh-9)*60 + mm - rest
+                                            
+                                            if(typeof vol === 'undefined') vol = '0';
+                                            vol1 = Math.round(parseInt(vol.replace(/,/g, ""))*270/timeCount)
+                                            volNew = nf.format(Math.round(parseInt(vol.replace(/,/g, ""))*270/timeCount))
                             %>
-                                <% 
-                                    vol = item.data.find(x => x.name === coPhieu).vol
-
-                                    time = item.time.split(":");
-                                    hh = parseInt(time[0])
-                                    mm = parseInt(time[1])
-                                    rest = 0;
-                                    if(hh >= 13) rest = 90
-                                    timeCount = (hh-9)*60 + mm - rest
-
-                                    vol1 = Math.round(parseInt(vol.replace(/,/g, ""))*270/timeCount)
-                                    volNew = nf.format(Math.round(parseInt(vol.replace(/,/g, ""))*270/timeCount))
-                                %>
-                                <td><text title="<%= volNew %>"><%= (vol1/avg).toFixed(2) %></text></td>
+                                            <td><text title="<%= volNew %>"><%= (vol1/avg).toFixed(2) %></text></td>
                             <% 
+                                        }
                                     }
                                 }) 
                             %>

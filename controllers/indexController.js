@@ -28,7 +28,9 @@ module.exports.tools_get = function (req, res) {
         return api.readCoPhieu(list);
     })
     .then(function(data) {
-        res.render('tools', { list : data[1] , cp : data[0]});
+        let cp = api.myCache.get("coPhieuValue");
+        //console.log(cp);
+        res.render('tools', { list : data[1] , cp : cp });
     })
 }
 
@@ -54,4 +56,25 @@ module.exports.data_get = function (req, res) {
     res.send(myJson);   // echo the result back
     var name = myJson.count + ".json";
     api.saveJson(myJson, name, "__data/");
+}
+
+module.exports.cp_add = function (req, res) {
+    let myJson = req.body;      // your JSON
+    let myValue = req.body.myKey;   // a value from your JSON
+    console.log("RECEIVED POST DATA (cp_add)");
+    res.send(myJson);   // echo the result back
+
+    var name = myJson.name;
+    var index = myJson.index-1;
+    if(index < 0) index = 0;
+    api.addCoPhieu(name, index);
+}
+
+module.exports.cp_remove = function (req, res) {
+    let myJson = req.body;      // your JSON
+    let myValue = req.body.myKey;   // a value from your JSON
+    console.log("RECEIVED POST DATA (cp_remove)");
+    res.send(myJson);   // echo the result back
+    var name = myJson.name;
+    api.removeCoPhieu(name);
 }

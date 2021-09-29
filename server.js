@@ -23,6 +23,7 @@ app.use(express.static(path.join(__dirname, 'node_modules')));
 app.use(express.static(path.join(__dirname, 'images')));
 app.use(express.static(path.join(__dirname, 'controllers')));
 app.use(express.static(path.join(__dirname, 'routes')));
+app.use(express.static(path.join(__dirname, 'html/scripts')));
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", options => iotions.AllowAnyOrigin());
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");

@@ -63,9 +63,17 @@ td p {
 	width: 100px;
 	white-space: nowrap;
 	overflow: hidden;
-	display: inline-block;
 	text-overflow: ellipsis;
 	margin: 0;
+    display: inline-flex;
+}
+
+td button {
+    text-align: center;
+    height: 30px;
+	width: 30px;
+    background-color: white;
+    display: inline-flex;
 }
 
 /* STYLE P IN LIST */

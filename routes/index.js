@@ -10,5 +10,8 @@ router.get('/tools', indexCon.tools_get);
 
 router.post('/cc', indexCon.data_get);
 
+router.post('/cp-add', indexCon.cp_add);
+router.post('/cp-remove', indexCon.cp_remove);
+
 
 module.exports = router;
