@@ -42,4 +42,3 @@ app.use('/', router);
 app.listen(process.env.SERVER_PORT, "0.0.0.0", () => console.log(`Server is running at ${process.env.SERVER_PORT}`));
 
 api.updateCoPhieu();
-setInterval(api.updateCoPhieu, 3*60000);

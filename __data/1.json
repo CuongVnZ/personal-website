@@ -2,19 +2,19 @@
   "data": [
     {
       "name": "AAA",
-      "vol": "306,80"
+      "vol": "105,80"
     },
     {
       "name": "AAM",
-      "vol": "30"
+      "vol": "20"
     },
     {
       "name": "AAT",
-      "vol": "33,20"
+      "vol": "9,00"
     },
     {
       "name": "ABS",
-      "vol": "34,90"
+      "vol": "48,30"
     },
     {
       "name": "ABT",
@@ -22,63 +22,67 @@
     },
     {
       "name": "ACB",
-      "vol": "452,90"
+      "vol": "19,10"
     },
     {
       "name": "ACC",
-      "vol": "80"
+      "vol": "50"
     },
     {
       "name": "ACL",
-      "vol": "22,10"
+      "vol": "10"
     },
     {
       "name": "ADG",
-      "vol": "24,50"
+      "vol": "7,50"
     },
     {
       "name": "ADS",
-      "vol": "61,20"
+      "vol": "36,30"
     },
     {
       "name": "AGG",
-      "vol": "62,50"
+      "vol": "1,10"
     },
     {
       "name": "AGM",
-      "vol": "14,60"
+      "vol": "2,40"
     },
     {
       "name": "AGR",
-      "vol": "353,40"
+      "vol": "8,10"
     },
     {
       "name": "AMD",
-      "vol": "199,70"
+      "vol": "36,40"
     },
     {
       "name": "ANV",
-      "vol": "12,90"
+      "vol": "1,10"
     },
     {
       "name": "APC",
-      "vol": ""
+      "vol": "80"
     },
     {
       "name": "APG",
-      "vol": "1,201,40"
+      "vol": "148,90"
     },
     {
       "name": "APH",
-      "vol": "267,50"
+      "vol": "11,20"
+    },
+    {
+      "name": "ASG",
+      "vol": ""
     },
     {
       "name": "ASM",
-      "vol": "645,90"
+      "vol": "19,20"
     },
     {
       "name": "ASP",
-      "vol": "173,70"
+      "vol": "147,30"
     },
     {
       "name": "AST",
@@ -86,23 +90,23 @@
     },
     {
       "name": "BBC",
-      "vol": "10"
+      "vol": ""
     },
     {
       "name": "BCE",
-      "vol": "29,30"
+      "vol": "11,00"
     },
     {
       "name": "BCG",
-      "vol": "251,60"
+      "vol": "78,80"
     },
     {
       "name": "BCM",
-      "vol": "2,10"
+      "vol": "10"
     },
     {
       "name": "BFC",
-      "vol": "132,50"
+      "vol": "12,20"
     },
     {
       "name": "BHN",
@@ -110,27 +114,27 @@
     },
     {
       "name": "BIC",
-      "vol": "3,40"
+      "vol": "10"
     },
     {
       "name": "BID",
-      "vol": "74,30"
+      "vol": "11,90"
     },
     {
       "name": "BKG",
-      "vol": "40,80"
+      "vol": "7,30"
     },
     {
       "name": "BMC",
-      "vol": "39,10"
+      "vol": "83,80"
     },
     {
       "name": "BMI",
-      "vol": "14,20"
+      "vol": "2,50"
     },
     {
       "name": "BMP",
-      "vol": "7,40"
+      "vol": ""
     },
     {
       "name": "BRC",
@@ -138,11 +142,11 @@
     },
     {
       "name": "BSI",
-      "vol": "110,30"
+      "vol": "3,50"
     },
     {
       "name": "BTP",
-      "vol": "1,70"
+      "vol": ""
     },
     {
       "name": "BTT",
@@ -150,19 +154,19 @@
     },
     {
       "name": "BVH",
-      "vol": "66,00"
+      "vol": "21,50"
     },
     {
       "name": "BWE",
-      "vol": "7,90"
+      "vol": "10"
     },
     {
       "name": "C32",
-      "vol": "13,30"
+      "vol": ""
     },
     {
       "name": "C47",
-      "vol": "37,80"
+      "vol": "5,20"
     },
     {
       "name": "CAV",
@@ -174,11 +178,11 @@
     },
     {
       "name": "CCL",
-      "vol": "23,40"
+      "vol": "2,30"
     },
     {
       "name": "CDC",
-      "vol": ""
+      "vol": "4,40"
     },
     {
       "name": "CEE",
@@ -186,23 +190,23 @@
     },
     {
       "name": "CFPT2102",
-      "vol": "20"
+      "vol": ""
     },
     {
       "name": "CFPT2103",
-      "vol": "49,30"
+      "vol": ""
     },
     {
       "name": "CFPT2104",
-      "vol": "40"
+      "vol": "10"
     },
     {
       "name": "CFPT2105",
-      "vol": "20"
+      "vol": "4,30"
     },
     {
-      "name": "CHDB2101",
-      "vol": "44,00"
+      "name": "CFPT2106",
+      "vol": ""
     },
     {
       "name": "CHDB2102",
@@ -213,52 +217,56 @@
       "vol": ""
     },
     {
-      "name": "CHPG2101",
-      "vol": "18,90"
-    },
-    {
       "name": "CHPG2109",
-      "vol": "20"
+      "vol": "30"
     },
     {
       "name": "CHPG2110",
-      "vol": "104,80"
+      "vol": "1,10"
     },
     {
       "name": "CHPG2111",
-      "vol": "251,90"
+      "vol": "101,00"
+    },
+    {
+      "name": "CHPG2112",
+      "vol": "5,20"
     },
     {
       "name": "CIG",
-      "vol": "8,90"
+      "vol": ""
     },
     {
       "name": "CII",
-      "vol": "320,60"
-    },
-    {
-      "name": "CKDH2101",
-      "vol": "9,50"
+      "vol": "35,80"
     },
     {
       "name": "CKDH2103",
-      "vol": "11,30"
+      "vol": "30"
     },
     {
       "name": "CKDH2104",
-      "vol": "134,10"
+      "vol": ""
+    },
+    {
+      "name": "CKDH2105",
+      "vol": ""
+    },
+    {
+      "name": "CKDH2106",
+      "vol": ""
     },
     {
       "name": "CKG",
-      "vol": "64,20"
+      "vol": "10,30"
     },
     {
       "name": "CLC",
-      "vol": "20"
+      "vol": ""
     },
     {
       "name": "CLL",
-      "vol": "3,40"
+      "vol": "10"
     },
     {
       "name": "CLW",
@@ -266,35 +274,35 @@
     },
     {
       "name": "CMBB2103",
-      "vol": "30"
-    },
-    {
-      "name": "CMBB2104",
-      "vol": "179,60"
-    },
-    {
-      "name": "CMG",
-      "vol": "6,40"
-    },
-    {
-      "name": "CMSN2101",
-      "vol": "11,00"
-    },
-    {
-      "name": "CMSN2102",
-      "vol": "9,80"
-    },
-    {
-      "name": "CMSN2104",
       "vol": ""
     },
     {
+      "name": "CMBB2104",
+      "vol": "2,20"
+    },
+    {
+      "name": "CMBB2105",
+      "vol": ""
+    },
+    {
+      "name": "CMG",
+      "vol": ""
+    },
+    {
+      "name": "CMSN2104",
+      "vol": "10"
+    },
+    {
       "name": "CMSN2105",
-      "vol": "90,00"
+      "vol": "10"
     },
     {
       "name": "CMSN2106",
-      "vol": "12,20"
+      "vol": ""
+    },
+    {
+      "name": "CMSN2107",
+      "vol": ""
     },
     {
       "name": "CMV",
@@ -302,87 +310,79 @@
     },
     {
       "name": "CMWG2104",
-      "vol": "9,60"
+      "vol": "30,10"
     },
     {
       "name": "CMWG2106",
-      "vol": "5,30"
+      "vol": ""
     },
     {
       "name": "CMWG2107",
-      "vol": "86,00"
+      "vol": ""
+    },
+    {
+      "name": "CMWG2108",
+      "vol": ""
     },
     {
       "name": "CMX",
-      "vol": "56,50"
+      "vol": "10"
     },
     {
       "name": "CNG",
-      "vol": "112,70"
-    },
-    {
-      "name": "CNVL2101",
-      "vol": "14,90"
-    },
-    {
-      "name": "CNVL2102",
-      "vol": "60,50"
+      "vol": "57,20"
     },
     {
       "name": "CNVL2103",
-      "vol": "102,20"
+      "vol": ""
     },
     {
       "name": "COM",
       "vol": ""
     },
     {
-      "name": "CPDR2102",
-      "vol": "50"
-    },
-    {
       "name": "CPNJ2104",
-      "vol": "8,60"
+      "vol": ""
     },
     {
       "name": "CPNJ2105",
-      "vol": "31,20"
+      "vol": "4,00"
+    },
+    {
+      "name": "CPNJ2106",
+      "vol": ""
     },
     {
       "name": "CRC",
-      "vol": "45,90"
+      "vol": "30"
     },
     {
       "name": "CRE",
-      "vol": "124,70"
-    },
-    {
-      "name": "CSBT2101",
-      "vol": "11,20"
+      "vol": "70,50"
     },
     {
       "name": "CSM",
-      "vol": "10"
-    },
-    {
-      "name": "CSTB2101",
       "vol": ""
     },
     {
       "name": "CSTB2105",
-      "vol": "6,20"
+      "vol": ""
     },
     {
       "name": "CSTB2106",
-      "vol": "11,30"
+      "vol": ""
     },
     {
       "name": "CSTB2107",
-      "vol": "69,10"
+      "vol": "1,20"
+    },
+    {
+      "name": "CSTB2108",
+      "vol": ""
     },
     {
       "name": "CSV",
-      "vol": "7,00"
+      "vol": "17,70"
     },
     {
       "name": "CTCB2101",
@@ -390,79 +390,67 @@
     },
     {
       "name": "CTCB2105",
-      "vol": "1,60"
+      "vol": ""
     },
     {
       "name": "CTCB2106",
-      "vol": "98,50"
+      "vol": "3,00"
     },
     {
-      "name": "CTCH2101",
+      "name": "CTCB2107",
+      "vol": ""
+    },
+    {
+      "name": "CTCB2108",
       "vol": ""
     },
     {
       "name": "CTD",
-      "vol": "19,40"
+      "vol": "4,00"
     },
     {
       "name": "CTF",
-      "vol": "33,30"
+      "vol": "70"
     },
     {
       "name": "CTG",
-      "vol": "894,80"
+      "vol": "112,50"
     },
     {
       "name": "CTI",
-      "vol": "90,80"
+      "vol": "13,80"
     },
     {
       "name": "CTS",
-      "vol": "102,50"
-    },
-    {
-      "name": "CVHM2101",
-      "vol": "2,50"
+      "vol": "10,90"
     },
     {
       "name": "CVHM2107",
-      "vol": "36,10"
+      "vol": "1,10"
     },
     {
-      "name": "CVIC2101",
+      "name": "CVHM2108",
+      "vol": ""
+    },
+    {
+      "name": "CVHM2109",
       "vol": "10"
     },
     {
-      "name": "CVIC2103",
-      "vol": "100,50"
-    },
-    {
       "name": "CVIC2104",
-      "vol": "6,70"
+      "vol": "10"
     },
     {
       "name": "CVIC2105",
-      "vol": "228,50"
+      "vol": "7,00"
     },
     {
       "name": "CVJC2101",
-      "vol": "20,20"
+      "vol": ""
     },
     {
       "name": "CVJC2102",
-      "vol": ""
-    },
-    {
-      "name": "CVNM2101",
-      "vol": ""
-    },
-    {
-      "name": "CVNM2104",
-      "vol": "22,00"
-    },
-    {
-      "name": "CVNM2105",
-      "vol": "156,60"
+      "vol": "20"
     },
     {
       "name": "CVNM2106",
@@ -470,39 +458,47 @@
     },
     {
       "name": "CVNM2107",
-      "vol": "10"
+      "vol": ""
     },
     {
       "name": "CVNM2108",
-      "vol": "2,50"
+      "vol": "1,10"
     },
     {
       "name": "CVNM2109",
-      "vol": "12,40"
+      "vol": "5,00"
+    },
+    {
+      "name": "CVNM2110",
+      "vol": ""
     },
     {
       "name": "CVPB2105",
-      "vol": "3,20"
+      "vol": "10"
     },
     {
       "name": "CVPB2106",
-      "vol": "244,40"
+      "vol": "10"
     },
     {
-      "name": "CVRE2101",
-      "vol": "2,10"
+      "name": "CVPB2107",
+      "vol": ""
     },
     {
       "name": "CVRE2105",
-      "vol": "1,80"
+      "vol": ""
     },
     {
       "name": "CVRE2106",
-      "vol": "198,30"
+      "vol": "2,60"
     },
     {
       "name": "CVRE2107",
-      "vol": "12,00"
+      "vol": "10"
+    },
+    {
+      "name": "CVRE2108",
+      "vol": "10"
     },
     {
       "name": "CVT",
@@ -510,75 +506,75 @@
     },
     {
       "name": "D2D",
-      "vol": "4,70"
+      "vol": "3,20"
     },
     {
       "name": "DAG",
-      "vol": "9,30"
+      "vol": "15,40"
     },
     {
       "name": "DAH",
-      "vol": "26,10"
+      "vol": "15,00"
     },
     {
       "name": "DAT",
-      "vol": "20"
+      "vol": ""
     },
     {
       "name": "DBC",
-      "vol": "156,90"
+      "vol": "4,80"
     },
     {
       "name": "DBD",
-      "vol": "7,00"
+      "vol": ""
     },
     {
       "name": "DBT",
-      "vol": "8,70"
+      "vol": ""
     },
     {
       "name": "DC4",
-      "vol": "7,90"
+      "vol": ""
     },
     {
       "name": "DCL",
-      "vol": "52,90"
+      "vol": "2,50"
     },
     {
       "name": "DCM",
-      "vol": "131,10"
+      "vol": "157,30"
     },
     {
       "name": "DGC",
-      "vol": "21,10"
-    },
-    {
-      "name": "DGW",
-      "vol": "61,50"
-    },
-    {
-      "name": "DHA",
-      "vol": "2,80"
-    },
-    {
-      "name": "DHC",
       "vol": "15,60"
     },
     {
+      "name": "DGW",
+      "vol": "4,60"
+    },
+    {
+      "name": "DHA",
+      "vol": "20"
+    },
+    {
+      "name": "DHC",
+      "vol": "30"
+    },
+    {
       "name": "DHG",
-      "vol": "3,30"
+      "vol": ""
     },
     {
       "name": "DHM",
-      "vol": "33,30"
+      "vol": "5,00"
     },
     {
       "name": "DIG",
-      "vol": "505,60"
+      "vol": "17,90"
     },
     {
       "name": "DLG",
-      "vol": "438,60"
+      "vol": "763,20"
     },
     {
       "name": "DMC",
@@ -586,27 +582,27 @@
     },
     {
       "name": "DPG",
-      "vol": "62,40"
+      "vol": "27,60"
     },
     {
       "name": "DPM",
-      "vol": "277,40"
+      "vol": "147,20"
     },
     {
       "name": "DPR",
-      "vol": "11,10"
+      "vol": "1,80"
     },
     {
       "name": "DQC",
-      "vol": "14,00"
+      "vol": ""
     },
     {
       "name": "DRC",
-      "vol": "51,50"
+      "vol": "5,80"
     },
     {
       "name": "DRH",
-      "vol": "106,70"
+      "vol": "46,40"
     },
     {
       "name": "DRL",
@@ -614,15 +610,15 @@
     },
     {
       "name": "DSN",
-      "vol": "70"
+      "vol": ""
     },
     {
       "name": "DTA",
-      "vol": "14,30"
+      "vol": ""
     },
     {
       "name": "DTL",
-      "vol": "2,00"
+      "vol": "50"
     },
     {
       "name": "DTT",
@@ -630,31 +626,31 @@
     },
     {
       "name": "DVP",
-      "vol": "11,00"
-    },
-    {
-      "name": "DXG",
-      "vol": "792,10"
-    },
-    {
-      "name": "DXS",
-      "vol": "9,40"
-    },
-    {
-      "name": "DXV",
       "vol": ""
     },
     {
+      "name": "DXG",
+      "vol": "11,20"
+    },
+    {
+      "name": "DXS",
+      "vol": "1,00"
+    },
+    {
+      "name": "DXV",
+      "vol": "2,00"
+    },
+    {
       "name": "E1VFVN30",
-      "vol": "9,20"
+      "vol": "4,10"
     },
     {
       "name": "EIB",
-      "vol": "25,30"
+      "vol": "18,00"
     },
     {
       "name": "ELC",
-      "vol": "19,00"
+      "vol": "11,30"
     },
     {
       "name": "EMC",
@@ -662,55 +658,55 @@
     },
     {
       "name": "EVE",
-      "vol": "6,50"
+      "vol": "80"
     },
     {
       "name": "EVG",
-      "vol": "12,00"
+      "vol": "30"
     },
     {
       "name": "FCM",
-      "vol": "1,30"
+      "vol": "45,60"
     },
     {
       "name": "FCN",
-      "vol": "267,90"
+      "vol": "45,20"
     },
     {
       "name": "FDC",
-      "vol": ""
+      "vol": "20"
     },
     {
       "name": "FIR",
-      "vol": "49,70"
+      "vol": "28,20"
     },
     {
       "name": "FIT",
-      "vol": "9,652,10"
+      "vol": "104,40"
     },
     {
       "name": "FLC",
-      "vol": "1,012,50"
+      "vol": "41,80"
     },
     {
       "name": "FMC",
-      "vol": "5,10"
+      "vol": "1,00"
     },
     {
       "name": "FPT",
-      "vol": "109,40"
+      "vol": "15,30"
     },
     {
       "name": "FRT",
-      "vol": "116,40"
+      "vol": "35,00"
     },
     {
       "name": "FTM",
-      "vol": "12,90"
+      "vol": "17,10"
     },
     {
       "name": "FTS",
-      "vol": "35,70"
+      "vol": "50"
     },
     {
       "name": "FUCTVGF2",
@@ -718,39 +714,39 @@
     },
     {
       "name": "FUCVREIT",
-      "vol": "1,40"
-    },
-    {
-      "name": "FUEMAV30",
-      "vol": "30"
-    },
-    {
-      "name": "FUESSV30",
-      "vol": "9,10"
-    },
-    {
-      "name": "FUESSV50",
-      "vol": "25,00"
-    },
-    {
-      "name": "FUESSVFL",
-      "vol": "1,30"
-    },
-    {
-      "name": "FUEVFVND",
-      "vol": "15,40"
-    },
-    {
-      "name": "FUEVN100",
       "vol": "10"
     },
     {
-      "name": "GAB",
+      "name": "FUEMAV30",
       "vol": "20"
     },
     {
+      "name": "FUESSV30",
+      "vol": "1,10"
+    },
+    {
+      "name": "FUESSV50",
+      "vol": ""
+    },
+    {
+      "name": "FUESSVFL",
+      "vol": "1,10"
+    },
+    {
+      "name": "FUEVFVND",
+      "vol": "10"
+    },
+    {
+      "name": "FUEVN100",
+      "vol": ""
+    },
+    {
+      "name": "GAB",
+      "vol": ""
+    },
+    {
       "name": "GAS",
-      "vol": "58,80"
+      "vol": "28,80"
     },
     {
       "name": "GDT",
@@ -758,59 +754,59 @@
     },
     {
       "name": "GEG",
-      "vol": "57,20"
+      "vol": "16,30"
     },
     {
       "name": "GEX",
-      "vol": "983,60"
+      "vol": "22,30"
     },
     {
       "name": "GIL",
-      "vol": "10,00"
+      "vol": "1,10"
     },
     {
       "name": "GMC",
-      "vol": "1,20"
+      "vol": ""
     },
     {
       "name": "GMD",
-      "vol": "171,20"
+      "vol": "3,70"
     },
     {
       "name": "GSP",
-      "vol": "7,40"
+      "vol": "7,80"
     },
     {
       "name": "GTA",
-      "vol": "1,30"
+      "vol": ""
     },
     {
       "name": "GTN",
-      "vol": "96,10"
+      "vol": "1,70"
     },
     {
       "name": "GVR",
-      "vol": "274,00"
+      "vol": "17,60"
     },
     {
       "name": "HAG",
-      "vol": "178,20"
+      "vol": "314,40"
     },
     {
       "name": "HAH",
-      "vol": "125,30"
+      "vol": "57,40"
     },
     {
       "name": "HAI",
-      "vol": "170,60"
+      "vol": "50,70"
     },
     {
       "name": "HAP",
-      "vol": "14,50"
+      "vol": "4,10"
     },
     {
       "name": "HAR",
-      "vol": "58,30"
+      "vol": "1,60"
     },
     {
       "name": "HAS",
@@ -818,55 +814,55 @@
     },
     {
       "name": "HAX",
-      "vol": "40,40"
+      "vol": "7,50"
     },
     {
       "name": "HBC",
-      "vol": "389,60"
+      "vol": "113,40"
     },
     {
       "name": "HCD",
-      "vol": "215,60"
+      "vol": "49,40"
     },
     {
       "name": "HCM",
-      "vol": "288,20"
+      "vol": "18,00"
     },
     {
       "name": "HDB",
-      "vol": "175,80"
+      "vol": "26,30"
     },
     {
       "name": "HDC",
-      "vol": "15,30"
+      "vol": "2,50"
     },
     {
       "name": "HDG",
-      "vol": "114,20"
+      "vol": "6,40"
     },
     {
       "name": "HHP",
-      "vol": "61,10"
+      "vol": "1,50"
     },
     {
       "name": "HHS",
-      "vol": "220,20"
+      "vol": "27,60"
     },
     {
       "name": "HID",
-      "vol": "112,80"
+      "vol": "4,40"
     },
     {
       "name": "HII",
-      "vol": "208,50"
+      "vol": "13,20"
     },
     {
       "name": "HMC",
-      "vol": "10,60"
+      "vol": "2,50"
     },
     {
       "name": "HNG",
-      "vol": "318,00"
+      "vol": "8,90"
     },
     {
       "name": "HOT",
@@ -874,15 +870,15 @@
     },
     {
       "name": "HPG",
-      "vol": "6,347,40"
+      "vol": "396,50"
     },
     {
       "name": "HPX",
-      "vol": "134,70"
+      "vol": "53,10"
     },
     {
       "name": "HQC",
-      "vol": "819,10"
+      "vol": "105,10"
     },
     {
       "name": "HRC",
@@ -890,35 +886,35 @@
     },
     {
       "name": "HSG",
-      "vol": "2,288,30"
+      "vol": "40,40"
     },
     {
       "name": "HSL",
-      "vol": "15,00"
+      "vol": ""
     },
     {
       "name": "HT1",
-      "vol": "78,60"
+      "vol": "143,90"
     },
     {
       "name": "HTI",
-      "vol": "8,60"
+      "vol": "20"
     },
     {
       "name": "HTL",
-      "vol": "3,20"
+      "vol": ""
     },
     {
       "name": "HTN",
-      "vol": "27,50"
+      "vol": ""
     },
     {
       "name": "HTV",
-      "vol": "50"
+      "vol": ""
     },
     {
       "name": "HU1",
-      "vol": "5,00"
+      "vol": ""
     },
     {
       "name": "HU3",
@@ -926,95 +922,95 @@
     },
     {
       "name": "HUB",
-      "vol": ""
+      "vol": "11,30"
     },
     {
       "name": "HVH",
-      "vol": "43,90"
+      "vol": "8,10"
     },
     {
       "name": "HVN",
-      "vol": "188,00"
+      "vol": "38,70"
     },
     {
       "name": "HVX",
-      "vol": "108,60"
+      "vol": "6,50"
     },
     {
       "name": "IBC",
-      "vol": "70,50"
+      "vol": "82,70"
     },
     {
       "name": "ICT",
-      "vol": "2,30"
+      "vol": "70"
     },
     {
       "name": "IDI",
-      "vol": "102,50"
+      "vol": "22,10"
     },
     {
       "name": "IJC",
-      "vol": "329,00"
+      "vol": "30,60"
     },
     {
       "name": "ILB",
-      "vol": "2,50"
+      "vol": "1,30"
     },
     {
       "name": "IMP",
-      "vol": "10"
+      "vol": ""
     },
     {
       "name": "ITA",
-      "vol": "426,90"
+      "vol": "131,20"
     },
     {
       "name": "ITC",
-      "vol": "10,20"
+      "vol": "1,10"
     },
     {
       "name": "ITD",
-      "vol": "15,80"
+      "vol": "15,00"
     },
     {
       "name": "JVC",
-      "vol": "3,630,50"
+      "vol": "57,40"
     },
     {
       "name": "KBC",
-      "vol": "577,70"
+      "vol": "106,60"
     },
     {
       "name": "KDC",
-      "vol": "246,30"
+      "vol": "33,80"
     },
     {
       "name": "KDH",
-      "vol": "196,60"
+      "vol": "20,80"
     },
     {
       "name": "KHG",
-      "vol": "43,30"
+      "vol": "2,70"
     },
     {
       "name": "KHP",
-      "vol": "10,60"
+      "vol": ""
     },
     {
       "name": "KMR",
-      "vol": "61,70"
+      "vol": "50"
     },
     {
       "name": "KOS",
-      "vol": "75,20"
+      "vol": ""
     },
     {
       "name": "KPF",
-      "vol": "141,40"
+      "vol": ""
     },
     {
       "name": "KSB",
-      "vol": "101,80"
+      "vol": "40,10"
     },
     {
       "name": "L10",
@@ -1022,15 +1018,15 @@
     },
     {
       "name": "LAF",
-      "vol": "1,60"
+      "vol": ""
     },
     {
       "name": "LBM",
-      "vol": "40"
+      "vol": ""
     },
     {
       "name": "LCG",
-      "vol": "371,70"
+      "vol": "39,90"
     },
     {
       "name": "LCM",
@@ -1038,11 +1034,11 @@
     },
     {
       "name": "LDG",
-      "vol": "287,20"
+      "vol": "34,90"
     },
     {
       "name": "LEC",
-      "vol": "90"
+      "vol": ""
     },
     {
       "name": "LGC",
@@ -1050,35 +1046,35 @@
     },
     {
       "name": "LGL",
-      "vol": "10,50"
+      "vol": ""
     },
     {
       "name": "LHG",
-      "vol": "9,90"
+      "vol": "2,00"
     },
     {
       "name": "LIX",
-      "vol": "1,40"
+      "vol": ""
     },
     {
       "name": "LM8",
-      "vol": "60"
+      "vol": "10"
     },
     {
       "name": "LPB",
-      "vol": "251,60"
+      "vol": "5,50"
     },
     {
       "name": "LSS",
-      "vol": "102,20"
+      "vol": "5,20"
     },
     {
       "name": "MBB",
-      "vol": "977,70"
+      "vol": "307,30"
     },
     {
       "name": "MCG",
-      "vol": "35,90"
+      "vol": "129,30"
     },
     {
       "name": "MCP",
@@ -1090,39 +1086,39 @@
     },
     {
       "name": "MHC",
-      "vol": "170,90"
+      "vol": "4,00"
     },
     {
       "name": "MIG",
-      "vol": "69,90"
+      "vol": "10,40"
     },
     {
       "name": "MSB",
-      "vol": "241,40"
+      "vol": "55,70"
     },
     {
       "name": "MSH",
-      "vol": "22,70"
+      "vol": "1,90"
     },
     {
       "name": "MSN",
-      "vol": "75,00"
+      "vol": "23,90"
     },
     {
       "name": "MWG",
-      "vol": "168,50"
+      "vol": "20,00"
     },
     {
       "name": "NAF",
-      "vol": "37,60"
+      "vol": "6,00"
     },
     {
       "name": "NAV",
-      "vol": "10"
+      "vol": ""
     },
     {
       "name": "NBB",
-      "vol": "20"
+      "vol": "50"
     },
     {
       "name": "NCT",
@@ -1130,51 +1126,51 @@
     },
     {
       "name": "NHA",
-      "vol": "8,30"
+      "vol": ""
     },
     {
       "name": "NHH",
-      "vol": "104,50"
+      "vol": "1,90"
     },
     {
       "name": "NKG",
-      "vol": "493,50"
+      "vol": "27,00"
     },
     {
       "name": "NLG",
-      "vol": "156,80"
+      "vol": "8,70"
     },
     {
       "name": "NNC",
-      "vol": "23,80"
+      "vol": "1,00"
     },
     {
       "name": "NSC",
-      "vol": "20"
+      "vol": ""
     },
     {
       "name": "NT2",
-      "vol": "74,80"
+      "vol": "13,80"
     },
     {
       "name": "NTL",
-      "vol": "78,10"
+      "vol": "9,10"
     },
     {
       "name": "NVL",
-      "vol": "400,10"
+      "vol": "17,80"
     },
     {
       "name": "NVT",
-      "vol": "20"
+      "vol": ""
     },
     {
       "name": "OCB",
-      "vol": "110,40"
+      "vol": "1,30"
     },
     {
       "name": "OGC",
-      "vol": "43,10"
+      "vol": "1,90"
     },
     {
       "name": "OPC",
@@ -1186,11 +1182,11 @@
     },
     {
       "name": "PAN",
-      "vol": "108,70"
+      "vol": "8,60"
     },
     {
       "name": "PC1",
-      "vol": "126,10"
+      "vol": "64,50"
     },
     {
       "name": "PDN",
@@ -1198,47 +1194,47 @@
     },
     {
       "name": "PDR",
-      "vol": "363,10"
+      "vol": "39,30"
     },
     {
       "name": "PET",
-      "vol": "111,60"
+      "vol": "37,60"
     },
     {
       "name": "PGC",
-      "vol": "20,40"
+      "vol": "50,40"
     },
     {
       "name": "PGD",
-      "vol": "50"
+      "vol": "60"
     },
     {
       "name": "PGI",
-      "vol": "80"
+      "vol": ""
     },
     {
       "name": "PHC",
-      "vol": "485,30"
+      "vol": "1,00"
     },
     {
       "name": "PHR",
-      "vol": "24,10"
+      "vol": "20,40"
     },
     {
       "name": "PIT",
-      "vol": "1,60"
+      "vol": "5,00"
     },
     {
       "name": "PJT",
-      "vol": "50"
+      "vol": ""
     },
     {
       "name": "PLP",
-      "vol": "134,60"
+      "vol": "32,80"
     },
     {
       "name": "PLX",
-      "vol": "30,50"
+      "vol": "9,70"
     },
     {
       "name": "PME",
@@ -1246,79 +1242,79 @@
     },
     {
       "name": "PMG",
-      "vol": "40"
+      "vol": "20"
     },
     {
       "name": "PNC",
-      "vol": "10"
+      "vol": ""
     },
     {
       "name": "PNJ",
-      "vol": "46,10"
+      "vol": "5,40"
     },
     {
       "name": "POM",
-      "vol": "44,20"
+      "vol": "8,30"
     },
     {
       "name": "POW",
-      "vol": "784,70"
+      "vol": "531,60"
     },
     {
       "name": "PPC",
-      "vol": "19,90"
+      "vol": "2,30"
     },
     {
       "name": "PSH",
-      "vol": "18,10"
+      "vol": "1,60"
     },
     {
       "name": "PTB",
-      "vol": "3,80"
+      "vol": "2,50"
     },
     {
       "name": "PTC",
-      "vol": "1,20"
+      "vol": ""
     },
     {
       "name": "PTL",
-      "vol": "60"
+      "vol": "6,60"
     },
     {
       "name": "PVD",
-      "vol": "374,50"
+      "vol": "47,10"
     },
     {
       "name": "PVT",
-      "vol": "706,70"
+      "vol": "16,00"
     },
     {
       "name": "PXI",
-      "vol": "80"
+      "vol": "4,50"
     },
     {
       "name": "PXS",
-      "vol": "2,40"
+      "vol": "23,60"
     },
     {
       "name": "QBS",
-      "vol": "111,00"
+      "vol": "39,20"
     },
     {
       "name": "QCG",
-      "vol": "8,90"
+      "vol": "30"
     },
     {
       "name": "RAL",
-      "vol": "70"
+      "vol": "1,10"
     },
     {
       "name": "RDP",
-      "vol": "71,00"
+      "vol": "50"
     },
     {
       "name": "REE",
-      "vol": "131,90"
+      "vol": "1,40"
     },
     {
       "name": "RIC",
@@ -1326,7 +1322,7 @@
     },
     {
       "name": "ROS",
-      "vol": "613,30"
+      "vol": "151,20"
     },
     {
       "name": "S4A",
@@ -1334,31 +1330,31 @@
     },
     {
       "name": "SAB",
-      "vol": "6,00"
+      "vol": ""
     },
     {
       "name": "SAM",
-      "vol": "31,00"
+      "vol": "50"
     },
     {
       "name": "SAV",
-      "vol": "11,60"
+      "vol": ""
     },
     {
       "name": "SBA",
-      "vol": "7,00"
+      "vol": "90"
     },
     {
       "name": "SBT",
-      "vol": "372,60"
+      "vol": "36,50"
     },
     {
       "name": "SBV",
-      "vol": "15,20"
+      "vol": ""
     },
     {
       "name": "SC5",
-      "vol": "1,90"
+      "vol": "40"
     },
     {
       "name": "SCD",
@@ -1366,11 +1362,11 @@
     },
     {
       "name": "SCR",
-      "vol": "546,40"
+      "vol": "122,90"
     },
     {
       "name": "SCS",
-      "vol": "1,10"
+      "vol": "3,10"
     },
     {
       "name": "SFC",
@@ -1378,31 +1374,31 @@
     },
     {
       "name": "SFG",
-      "vol": "10"
+      "vol": ""
     },
     {
       "name": "SFI",
-      "vol": "50"
+      "vol": ""
     },
     {
       "name": "SGN",
-      "vol": "20"
+      "vol": ""
     },
     {
       "name": "SGR",
-      "vol": "5,20"
+      "vol": "10"
     },
     {
       "name": "SGT",
-      "vol": "144,00"
+      "vol": "1,60"
     },
     {
       "name": "SHA",
-      "vol": "16,20"
+      "vol": "7,00"
     },
     {
       "name": "SHI",
-      "vol": "19,30"
+      "vol": "7,40"
     },
     {
       "name": "SHP",
@@ -1410,23 +1406,23 @@
     },
     {
       "name": "SII",
-      "vol": ""
+      "vol": "40"
     },
     {
       "name": "SJD",
-      "vol": "2,00"
+      "vol": "10,20"
     },
     {
       "name": "SJF",
-      "vol": "2,357,90"
+      "vol": "25,70"
     },
     {
       "name": "SJS",
-      "vol": "85,00"
+      "vol": "30"
     },
     {
       "name": "SKG",
-      "vol": "39,10"
+      "vol": ""
     },
     {
       "name": "SMA",
@@ -1434,35 +1430,35 @@
     },
     {
       "name": "SMB",
-      "vol": ""
+      "vol": "1,00"
     },
     {
       "name": "SMC",
-      "vol": "120,50"
+      "vol": "5,50"
     },
     {
       "name": "SPM",
-      "vol": "3,40"
+      "vol": "20"
     },
     {
       "name": "SRC",
-      "vol": "1,20"
+      "vol": "90"
     },
     {
       "name": "SRF",
-      "vol": "10,00"
+      "vol": ""
     },
     {
       "name": "SSB",
-      "vol": "106,20"
+      "vol": "19,60"
     },
     {
       "name": "SSC",
-      "vol": "10"
+      "vol": ""
     },
     {
       "name": "SSI",
-      "vol": "6,026,00"
+      "vol": "15,10"
     },
     {
       "name": "ST8",
@@ -1470,7 +1466,7 @@
     },
     {
       "name": "STB",
-      "vol": "1,492,70"
+      "vol": "106,40"
     },
     {
       "name": "STG",
@@ -1478,7 +1474,7 @@
     },
     {
       "name": "STK",
-      "vol": "2,00"
+      "vol": ""
     },
     {
       "name": "SVC",
@@ -1486,7 +1482,7 @@
     },
     {
       "name": "SVD",
-      "vol": "15,20"
+      "vol": ""
     },
     {
       "name": "SVI",
@@ -1498,11 +1494,11 @@
     },
     {
       "name": "SZC",
-      "vol": "15,70"
+      "vol": "11,60"
     },
     {
       "name": "SZL",
-      "vol": "1,10"
+      "vol": ""
     },
     {
       "name": "TAC",
@@ -1510,31 +1506,31 @@
     },
     {
       "name": "TBC",
-      "vol": "40"
+      "vol": ""
     },
     {
       "name": "TCB",
-      "vol": "525,00"
+      "vol": "42,90"
     },
     {
       "name": "TCD",
-      "vol": "139,80"
+      "vol": "6,10"
     },
     {
       "name": "TCH",
-      "vol": "1,980,90"
+      "vol": "38,00"
     },
     {
       "name": "TCL",
-      "vol": "11,50"
+      "vol": ""
     },
     {
       "name": "TCM",
-      "vol": "200,70"
+      "vol": "5,70"
     },
     {
       "name": "TCO",
-      "vol": "1,152,70"
+      "vol": "5,80"
     },
     {
       "name": "TCR",
@@ -1542,27 +1538,27 @@
     },
     {
       "name": "TCT",
-      "vol": "10"
+      "vol": ""
     },
     {
       "name": "TDC",
-      "vol": "132,10"
+      "vol": "10,80"
     },
     {
       "name": "TDG",
-      "vol": "547,30"
+      "vol": "6,10"
     },
     {
       "name": "TDH",
-      "vol": "177,60"
+      "vol": "196,30"
     },
     {
       "name": "TDM",
-      "vol": "138,40"
+      "vol": "40"
     },
     {
       "name": "TDP",
-      "vol": "9,30"
+      "vol": ""
     },
     {
       "name": "TDW",
@@ -1570,59 +1566,59 @@
     },
     {
       "name": "TEG",
-      "vol": "26,10"
+      "vol": "28,40"
     },
     {
       "name": "TGG",
-      "vol": "24,90"
+      "vol": "30,30"
     },
     {
       "name": "THG",
-      "vol": "40"
+      "vol": ""
     },
     {
       "name": "THI",
-      "vol": "1,10"
+      "vol": ""
     },
     {
       "name": "TIP",
-      "vol": "15,10"
+      "vol": "3,50"
     },
     {
       "name": "TIX",
-      "vol": "1,10"
+      "vol": ""
     },
     {
       "name": "TLD",
-      "vol": "100,00"
+      "vol": "9,50"
     },
     {
       "name": "TLG",
-      "vol": "12,60"
+      "vol": "70"
     },
     {
       "name": "TLH",
-      "vol": "473,50"
+      "vol": "16,50"
     },
     {
       "name": "TMP",
-      "vol": "10"
+      "vol": ""
     },
     {
       "name": "TMS",
-      "vol": "2,40"
+      "vol": "2,30"
     },
     {
       "name": "TMT",
-      "vol": "40"
+      "vol": ""
     },
     {
       "name": "TN1",
-      "vol": "2,50"
+      "vol": "2,20"
     },
     {
       "name": "TNA",
-      "vol": "12,70"
+      "vol": "6,60"
     },
     {
       "name": "TNC",
@@ -1630,19 +1626,19 @@
     },
     {
       "name": "TNH",
-      "vol": "128,80"
+      "vol": "48,60"
     },
     {
       "name": "TNI",
-      "vol": "18,40"
+      "vol": "2,50"
     },
     {
       "name": "TNT",
-      "vol": "17,90"
+      "vol": "3,70"
     },
     {
       "name": "TPB",
-      "vol": "439,90"
+      "vol": "47,00"
     },
     {
       "name": "TPC",
@@ -1654,23 +1650,19 @@
     },
     {
       "name": "TRC",
-      "vol": ""
-    },
-    {
-      "name": "TS4",
-      "vol": ""
+      "vol": "30"
     },
     {
       "name": "TSC",
-      "vol": "163,30"
+      "vol": "37,20"
     },
     {
       "name": "TTA",
-      "vol": "115,10"
+      "vol": "3,40"
     },
     {
       "name": "TTB",
-      "vol": "192,70"
+      "vol": "269,60"
     },
     {
       "name": "TTE",
@@ -1678,15 +1670,15 @@
     },
     {
       "name": "TTF",
-      "vol": "628,00"
+      "vol": "23,30"
     },
     {
       "name": "TV2",
-      "vol": "12,80"
+      "vol": "10"
     },
     {
       "name": "TVB",
-      "vol": "21,30"
+      "vol": "10"
     },
     {
       "name": "TVS",
@@ -1698,15 +1690,15 @@
     },
     {
       "name": "TYA",
-      "vol": "1,60"
+      "vol": ""
     },
     {
       "name": "UDC",
-      "vol": "1,80"
+      "vol": "3,10"
     },
     {
       "name": "UIC",
-      "vol": "3,20"
+      "vol": "20"
     },
     {
       "name": "VAF",
@@ -1714,11 +1706,11 @@
     },
     {
       "name": "VCA",
-      "vol": "2,60"
+      "vol": ""
     },
     {
       "name": "VCB",
-      "vol": "64,00"
+      "vol": "40"
     },
     {
       "name": "VCF",
@@ -1726,87 +1718,87 @@
     },
     {
       "name": "VCG",
-      "vol": "18,10"
-    },
-    {
-      "name": "VCI",
-      "vol": "408,90"
-    },
-    {
-      "name": "VDP",
-      "vol": "40"
-    },
-    {
-      "name": "VDS",
-      "vol": "70,50"
-    },
-    {
-      "name": "VFG",
       "vol": "20"
     },
     {
-      "name": "VGC",
-      "vol": "263,20"
+      "name": "VCI",
+      "vol": "33,10"
     },
     {
-      "name": "VHC",
-      "vol": "112,30"
-    },
-    {
-      "name": "VHM",
-      "vol": "689,90"
-    },
-    {
-      "name": "VIB",
-      "vol": "46,80"
-    },
-    {
-      "name": "VIC",
-      "vol": "255,00"
-    },
-    {
-      "name": "VID",
+      "name": "VDP",
       "vol": ""
     },
     {
+      "name": "VDS",
+      "vol": "7,40"
+    },
+    {
+      "name": "VFG",
+      "vol": ""
+    },
+    {
+      "name": "VGC",
+      "vol": "4,70"
+    },
+    {
+      "name": "VHC",
+      "vol": "62,00"
+    },
+    {
+      "name": "VHM",
+      "vol": "17,50"
+    },
+    {
+      "name": "VIB",
+      "vol": "30,70"
+    },
+    {
+      "name": "VIC",
+      "vol": "15,20"
+    },
+    {
+      "name": "VID",
+      "vol": "50"
+    },
+    {
       "name": "VIP",
-      "vol": "24,60"
+      "vol": "1,20"
     },
     {
       "name": "VIS",
-      "vol": "10"
+      "vol": "1,30"
     },
     {
       "name": "VIX",
-      "vol": "5,190,70"
+      "vol": "3,20"
     },
     {
       "name": "VJC",
-      "vol": "163,40"
+      "vol": "136,30"
     },
     {
       "name": "VMD",
-      "vol": "2,00"
+      "vol": "1,70"
     },
     {
       "name": "VND",
-      "vol": "376,00"
+      "vol": "25,70"
     },
     {
       "name": "VNE",
-      "vol": "85,10"
+      "vol": ""
     },
     {
       "name": "VNG",
-      "vol": "7,50"
+      "vol": ""
     },
     {
       "name": "VNL",
-      "vol": "225,10"
+      "vol": "20"
     },
     {
       "name": "VNM",
-      "vol": "172,40"
+      "vol": "25,60"
     },
     {
       "name": "VNS",
@@ -1814,47 +1806,47 @@
     },
     {
       "name": "VOS",
-      "vol": "280,40"
+      "vol": "38,60"
     },
     {
       "name": "VPB",
-      "vol": "431,90"
+      "vol": "44,60"
     },
     {
       "name": "VPD",
-      "vol": "50"
+      "vol": "30"
     },
     {
       "name": "VPG",
-      "vol": "139,30"
+      "vol": "39,20"
     },
     {
       "name": "VPH",
-      "vol": "365,80"
+      "vol": "32,30"
     },
     {
       "name": "VPI",
-      "vol": "169,10"
+      "vol": "57,50"
     },
     {
       "name": "VPS",
-      "vol": "1,30"
+      "vol": ""
     },
     {
       "name": "VRC",
-      "vol": "2,90"
+      "vol": "11,70"
     },
     {
       "name": "VRE",
-      "vol": "203,10"
+      "vol": "99,90"
     },
     {
       "name": "VSC",
-      "vol": "40"
+      "vol": "1,50"
     },
     {
       "name": "VSH",
-      "vol": "70"
+      "vol": "3,50"
     },
     {
       "name": "VSI",
@@ -1862,22 +1854,22 @@
     },
     {
       "name": "VTB",
-      "vol": "1,30"
+      "vol": ""
     },
     {
       "name": "VTO",
-      "vol": "29,70"
+      "vol": "18,60"
     },
     {
       "name": "YBM",
-      "vol": "1,90"
+      "vol": ""
     },
     {
       "name": "YEG",
-      "vol": "5,10"
+      "vol": "10"
     }
   ],
   "url": "https://iboard.ssi.com.vn/bang-gia/hose",
-  "time": "9:30",
+  "time": "9:15",
   "count": 1
 }

@@ -24,13 +24,10 @@ module.exports.tools_get = function (req, res) {
     .then(function(files) {
         return Promise.all(files.map(file => api.readJson(file, "__data/")));
     })
-    .then(function(list) {
-        return api.readCoPhieu(list);
-    })
     .then(function(data) {
         let cp = api.myCache.get("coPhieuValue");
         //console.log(cp);
-        res.render('tools', { list : data[1] , cp : cp });
+        res.render('tools', { list : data, cp : cp });
     })
 }
 
@@ -77,4 +74,24 @@ module.exports.cp_remove = function (req, res) {
     res.send(myJson);   // echo the result back
     var name = myJson.name;
     api.removeCoPhieu(name);
+}
+
+module.exports.cp_update = function (req, res) {
+    let myJson = req.body;
+    let myValue = req.body.myKey; 
+    console.log("RECEIVED POST DATA (cp_update)");
+    res.send(myJson);
+    api.saveJson(myJson, "__coPhieu.json", "")
+    .then(data => {
+        console.log("Updating co phieu")
+        api.updateCoPhieu()
+    })
+}
+
+module.exports.cp_list = function (req, res) {
+    console.log("RECEIVED GET DATA (cp_list)");
+    api.getCoPhieu()
+    .then(data => {
+        res.send(data);
+    });
 }
